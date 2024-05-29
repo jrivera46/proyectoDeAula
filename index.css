@@ -56,7 +56,7 @@ body {
 /* Imágenes */
 .image-item img {
   width: 100%;
-  height: 200px; /* Altura fija para todas las imágenes */
+  height: 350px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Escalar las imágenes para cubrir el contenedor manteniendo su relación de aspecto */
   border: 2px solid #ccc;
   border-radius: 10px;
