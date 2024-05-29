@@ -54,11 +54,10 @@ body {
 
 /* Imágenes */
 .image-item img {
-  width: calc(50% - 20px); /* Tamaño igual para todas las imágenes */
+  width: 100%;
   height: auto; /* Mantiene la relación de aspecto */
   border: 2px solid #ccc;
   border-radius: 10px;
-  margin-right: 20px; /* Espacio entre imágenes */
   margin-bottom: 20px; /* Espacio debajo de las imágenes */
 }
 
@@ -68,13 +67,8 @@ body {
   color: #fff;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .image-item {
-    flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
-  }
-
-  .image-item img {
-    width: 100%; /* Tamaño completo en pantallas pequeñas */
-    margin-right: 0; /* Elimina el margen entre imágenes en pantallas pequeñas */
+    width: calc(50% - 20px); /* Tamaño igual para todas las imágenes */
   }
 }
