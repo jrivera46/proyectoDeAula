@@ -7,7 +7,6 @@ body {
   padding: 0;
 }
 
-
 header {
   background: #abbaab;
   background: -webkit-linear-gradient(to right, #ffffff, #abbaab);
@@ -32,7 +31,6 @@ header h1 a {
   color: #000000;
 }
 
-
 body {
   padding-top: 100px;
 }
@@ -46,7 +44,7 @@ body {
   box-sizing: border-box;
 }
 
-
+/* Elemento individual de la imagen */
 .image-item {
   flex: 1 1 calc(50% - 20px); /* Ajusta la base flexible */
   margin-bottom: 20px;
@@ -54,12 +52,14 @@ body {
   box-sizing: border-box;
 }
 
+/* Imágenes */
 .image-item img {
-  width: 100%;
+  width: calc(50% - 20px); /* Tamaño igual para todas las imágenes */
   height: auto; /* Mantiene la relación de aspecto */
   border: 2px solid #ccc;
   border-radius: 10px;
-  margin-bottom: 20px; /* Espacio entre imágenes */
+  margin-right: 20px; /* Espacio entre imágenes */
+  margin-bottom: 20px; /* Espacio debajo de las imágenes */
 }
 
 .image-item h2 {
@@ -68,9 +68,13 @@ body {
   color: #fff;
 }
 
-
 @media (max-width: 600px) {
   .image-item {
     flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  }
+
+  .image-item img {
+    width: 100%; /* Tamaño completo en pantallas pequeñas */
+    margin-right: 0; /* Elimina el margen entre imágenes en pantallas pequeñas */
   }
 }
