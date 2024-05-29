@@ -47,7 +47,8 @@ body {
 
 /* Elemento individual de la imagen */
 .image-item {
-  flex-grow: 1; /* Permitir que las imágenes crezcan para ocupar todo el espacio disponible */
+  flex: 1 1 auto; /* Permitir que las imágenes crezcan para ocupar todo el espacio disponible */
+  width: calc(50% - 20px); /* Tamaño igual para todas las imágenes */
   margin-bottom: 20px;
   text-align: center;
   box-sizing: border-box;
@@ -69,8 +70,8 @@ body {
   color: #fff;
 }
 
-@media (min-width: 600px) {
+@media (max-width: 600px) {
   .image-item {
-    width: calc(50% - 20px); /* Tamaño igual para todas las imágenes */
+    width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
   }
 }
