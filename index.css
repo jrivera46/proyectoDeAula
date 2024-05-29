@@ -47,8 +47,7 @@ body {
 
 /* Elemento individual de la imagen */
 .image-item {
-  flex: 1 1 auto; /* Permitir que las imágenes crezcan para ocupar todo el espacio disponible */
-  width: calc(50% - 20px); /* Tamaño igual para todas las imágenes */
+  flex-basis: calc(50% - 20px); /* Tamaño igual para todas las imágenes */
   margin-bottom: 20px;
   text-align: center;
   box-sizing: border-box;
@@ -57,7 +56,7 @@ body {
 /* Imágenes */
 .image-item img {
   width: 100%;
-  height: 100%; /* Todas las imágenes tienen la misma altura */
+  height: 200px; /* Altura fija para todas las imágenes */
   object-fit: cover; /* Escalar las imágenes para cubrir el contenedor manteniendo su relación de aspecto */
   border: 2px solid #ccc;
   border-radius: 10px;
@@ -72,6 +71,6 @@ body {
 
 @media (max-width: 600px) {
   .image-item {
-    width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+    flex-basis: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
   }
 }
