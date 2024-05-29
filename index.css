@@ -41,6 +41,8 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 20px;
+  max-width: 1200px; /* Ancho máximo del contenedor de imágenes */
+  margin: 0 auto; /* Centra el contenedor */
   box-sizing: border-box;
 }
 
@@ -54,7 +56,7 @@ body {
 
 /* Imágenes */
 .image-item img {
-  width: 100%;
+  max-width: 100%; /* Ancho máximo del 100% del contenedor */
   height: auto; /* Mantiene la relación de aspecto */
   border: 2px solid #ccc;
   border-radius: 10px;
